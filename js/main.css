@@ -1,0 +1,217 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium);*{margin:0;padding:0}
+body,html{
+	height:100%;
+	font-family:Titillium,sans-serif;
+	background-color: #2d465b;
+	color:#FFF;
+}
+::selection {
+  background: #273a50; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #273a50; /* Gecko Browsers */
+}
+.wrapper{
+	width:910px;
+	height:200px;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	z-index:999;
+}
+.wrapper .left{
+	width:350px;
+	margin-top:-80px;
+	float:left;
+}
+.wrapper .right{
+	width:560px;
+	height:100%;
+	float:right;
+}
+.wrapper .right h1{
+	font-size:3em;
+	font-weight: 700;
+	margin:0;
+	padding:0px 0px 10px 4px;
+}
+.wrapper .right p{
+	font-size:1.5em;
+	margin:0;
+	padding:0px 0px 0px 8px;
+	color:RGBA(242,255,255,.66);
+	line-height:1.5;
+}
+.wrapper .right p a{
+	text-decoration:none;
+	color:RGBA(255,255,255,1);
+	padding:0 3px 3px;
+	border:1px dotted RGBA(242,255,255,.2);
+}
+
+.wrapper .right p a:hover{
+	background-color:RGBA(255,255,255,.1);
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+.wrapper .profile{
+	margin:10px 0;
+	width:300px;
+	height:300px;
+	border-radius:50%;
+	background:url(../images/profile.jpg) no-repeat;
+	background-size:cover;
+	background-position:center;
+	border:8px solid #fff;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	background-color:#FFF;
+}
+.wrapper .profile:hover{
+	cursor: crosshair;
+	border:12px solid #fff;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+footer{
+	color:#fff;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:100%;
+	background:url(../images/earth.png) no-repeat;
+	background-position:center bottom;
+	background-size: contain;
+	z-index:0;
+}
+
+@media screen and (max-width:600px) {
+
+	body{
+		overflow:hidden;
+	}
+
+	#bgcanvas{
+		height:100%;
+		width:100%;
+	}
+	.wrapper{
+		margin:auto;
+		width:100%;
+		width: 350px;
+		position:absolute;
+		height:180px;
+		z-index:999;
+	}
+
+	.wrapper .left{
+		width:100%;
+		height:200px;
+	}
+	.wrapper .right{
+		margin:0 18px;
+		width:auto;
+		clear:both;
+	}
+	.wrapper .right h1{
+		text-align: center;
+		width:100%;
+		font-size:30px;
+		margin-bottom:8px;
+	}
+	.wrapper .right p{
+		text-align: center;
+		width:100%;
+		margin:0;
+		padding:0;
+		color:RGBA(242,255,255,.8);
+		line-height:1.8;
+		font-size:13px;
+	}
+	.wrapper .right p a{
+		padding:-1px 3px 2px 3px;
+	}
+
+	.wrapper .profile{
+		width:200px;
+		height:200px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:-30px;
+		border:6px solid #fff;
+	}
+	footer{
+		height:30%;
+		background:url(../images/earth.png) no-repeat;
+		background-position:center bottom;
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width:1024px) and (min-width:601px) {
+
+	body{
+		overflow:hidden;
+	}
+
+	#bgcanvas{
+		height:100%;
+		width:100%;
+	}
+	.wrapper{
+	width:600px;
+	height:180px;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	z-index:999;
+	}
+	.wrapper .left{
+		width:140px;
+		height:140px;
+		margin-top:0px;
+		margin-left: 50px;
+		float:left;
+	}
+	.wrapper .right{
+		width:385px;
+		height:180px;
+		margin-top:34px;
+		margin-left: 5px;
+		float:right;
+	}
+	.wrapper .right h1{
+		font-size:2em;
+		font-weight: 700;
+		margin:0;
+		padding:0px 0px 10px 6px;
+	}
+	.wrapper .right p{
+		font-size:1em;
+		margin:0;
+		padding:0px 0px 0px 8px;
+		color:RGBA(242,255,255,.66);
+		line-height:1.5;
+	}
+	.wrapper .right p a{
+		text-decoration:none;
+		color:RGBA(255,255,255,1);
+		padding:0 3px 3px;
+		border:1px dotted RGBA(242,255,255,.2);
+	}
+
+	.wrapper .profile{
+		width:140px;
+		height:140px;
+		border:6px solid #fff;
+	}
+}
