@@ -42,8 +42,8 @@ body,html{
 	font-size:1.5em;
 	margin:0;
 	padding:0px 0px 0px 8px;
-	color:RGBA(242,255,255,.66);
-	line-height:1.5;
+	color:RGBA(242,255,255,.6);
+	line-height:1.7;
 }
 .wrapper .right p a{
 	text-decoration:none;
