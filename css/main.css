@@ -69,11 +69,11 @@ body,html{
 	border:8px solid #0c0f22;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
-	background-color:#FFF;
+	background-color:#000;
 }
 .wrapper .profile:hover{
 	cursor: crosshair;
-	border:12px solid #fff;
+	border:12px solid #0c0f22;
 	-webkit-transition: 0.3s ease-in-out;
 	-moz-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
